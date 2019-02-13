@@ -258,7 +258,7 @@
             rockelement.classList.add('rock');
             rockelement.classList.add('solid');
             bg.appendChild(rockelement);
-            let rock = new Rock(this.x + 70, this.y, "", rockelement); 
+            let rock = new Rock(this.x + 70 * this.facing, this.y, "", rockelement); 
           }
           displayAction() {
             if (this.progressBar === undefined) {
