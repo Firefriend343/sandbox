@@ -201,7 +201,7 @@
                 forceY = this.y - 20;
               }
               this.makePush(forceX, forceY);
-              let victim_el = collision(forceX, forceY, this, "enemy", forceWidth, this.height + 20);
+              let victim_el = collision(forceX, forceY, this, "target", forceWidth, this.height + 20);
               
               if (victim_el) { 
                 let victim = victim_el.sprite;
@@ -226,9 +226,9 @@
               window.setTimeout(function () { player1.element.src = "final-aurum-pixilart.png"; }, 300);
               window.setTimeout(function () { player1.element.src = "aurum-attack.png"; }, 500);
               window.setTimeout(function () { player1.element.src = "final-aurum-pixilart.png"; player1.state = "normal"; }, 600);
-              let victim_el = collision(this.x + this.width +5, this.y + this.height/2, this, "enemy",5 ,5);
+              let victim_el = collision(this.x + this.width +5, this.y + this.height/2, this, "target",5 ,5);
               if (this.facing == -1) {
-                victim_el = collision(this.x - 10, this.y + this.height/2, this, "enemy", 5 ,5);
+                victim_el = collision(this.x - 10, this.y + this.height/2, this, "target", 5 ,5);
               }
               if (victim_el) { 
                 let victim = victim_el.sprite;
