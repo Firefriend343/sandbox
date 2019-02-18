@@ -261,6 +261,7 @@
             let rockelement = document.createElement("div");
             rockelement.classList.add('rock');
             rockelement.classList.add('solid');
+            rockelement.classList.add('target');
             bg.appendChild(rockelement);
             let rock = new Rock(this.x + 70 * this.facing, this.y, "", rockelement); 
           }
